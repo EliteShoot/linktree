@@ -6,96 +6,9 @@
 <title>StoneBridge Development Group | Residential Real Estate Development &amp; Investment</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Inter,sans-serif;background:#f9f7f5;color:#0a0a0a;-webkit-font-smoothing:antialiased}
-a{color:inherit;text-decoration:none}
-.serif{font-family:"Cormorant Garamond",Georgia,serif;font-weight:400}
-.eyebrow{font-size:10px;font-weight:500;letter-spacing:.3em;text-transform:uppercase;color:#8a6e4b}
-.wrap{max-width:1280px;margin:0 auto;padding:0 32px}
-.logo{display:flex;flex-direction:column;align-items:center;line-height:1}
-.logo b{font-family:"Cormorant Garamond",serif;font-weight:400;font-size:24px;letter-spacing:.12em}
-.logo small{font-size:7px;letter-spacing:.35em;margin-top:6px}
-header{position:absolute;top:0;left:0;right:0;z-index:10;color:#fff;border-bottom:1px solid rgba(255,255,255,.15)}
-header .wrap{display:flex;justify-content:space-between;align-items:center;height:88px}
-nav.top{display:flex;gap:36px;font-size:12px;letter-spacing:.05em}
-.menu-btn{display:none;background:none;border:0;color:#fff;cursor:pointer}
-.hero{position:relative;min-height:100vh;color:#fff;display:flex;align-items:center;overflow:hidden}
-.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,15,25,.85),rgba(10,15,25,.35))}
-.hero .wrap{position:relative;z-index:1;width:100%}
-.hero .eyebrow{color:#d2c7b4;margin-bottom:24px}
-.hero h1{font-size:clamp(44px,6vw,84px);line-height:1.05;margin-bottom:28px}
-.hero h1 em{color:#e8dcc6}
-.hero p.lead{max-width:520px;font-size:15px;line-height:1.7;color:rgba(255,255,255,.85);margin-bottom:40px}
-.btns{display:flex;gap:16px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:14px;padding:16px 28px;font-size:11px;letter-spacing:.08em;border:1px solid currentColor;transition:background .2s,color .2s}
-.btn.solid{background:#fff;color:#0a0a0a;border-color:#fff}
-.btn.solid:hover{background:#e8dcc6;border-color:#e8dcc6}
-.btn.ghost:hover{background:rgba(255,255,255,.1)}
-.btn.dark{background:#1a1a1a;color:#fff;border-color:#1a1a1a}
-.btn.dark:hover{background:#333}
-.btn.outline:hover{background:#1a1a1a;color:#fff}
-.explore{position:absolute;bottom:40px;left:0;right:0;z-index:1;font-size:9px;letter-spacing:.3em;color:rgba(255,255,255,.75)}
-.link-line{display:inline-flex;gap:24px;align-items:center;font-size:12px;padding-bottom:10px;border-bottom:1px solid #0a0a0a}
-section{padding:110px 0}
-.intro .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px}
-.intro h2,.sec-h{font-size:clamp(34px,3.5vw,48px);line-height:1.1;margin-top:20px}
-.intro h2 em{color:#8f8a82}
-.intro p:not(.eyebrow){font-size:15px;line-height:1.8;color:#555;margin-bottom:20px}
-.approach{border-top:1px solid #e3ded7;max-width:1216px;margin:0 auto;padding:110px 0}
-.approach-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:64px;padding:0 32px}
-.approach-head p{font-size:13px;line-height:1.7;color:#777;text-align:right}
-.cards{display:grid;grid-template-columns:repeat(4,1fr);padding:0 32px}
-.card{padding:8px 32px 32px;border-left:1px solid #e3ded7}
-.card:first-child{border-left:0;padding-left:0}
-.card .top{display:flex;justify-content:space-between;font-size:11px;color:#777;margin-bottom:40px}
-.card svg{color:#8a6e4b}
-.card h3{font-size:32px;margin-bottom:16px}
-.card p{font-size:13px;line-height:1.75;color:#666}
-.props{background:#efebe6}
-.props-head{display:flex;justify-content:space-between;align-items:flex-end}
-.props .sub{color:#666;font-size:14px;margin:20px 0 56px}
-.empty{border:1px solid #d6d0c7;padding:80px 24px;text-align:center}
-.empty svg{color:#8a6e4b;margin-bottom:20px}
-.empty h3{font-size:36px;margin:14px 0 18px}
-.empty p.t{color:#777;font-size:14px;line-height:1.8;margin-bottom:36px}
-.sell{background:#e3dbd0}
-.sell .wrap{display:flex;justify-content:space-between;align-items:flex-end;gap:48px;flex-wrap:wrap}
-.sell p.t{max-width:520px;color:#555;font-size:14px;line-height:1.8;margin-top:24px}
-.sell .actions{display:flex;flex-direction:column;gap:28px;align-items:flex-start}
-.phone{font-family:"Cormorant Garamond",serif;font-size:28px}
-footer{background:#1a1a1a;color:#fff;padding:80px 0 40px}
-footer .grid{display:grid;grid-template-columns:2fr 2fr 1.4fr;gap:48px;padding-bottom:56px;border-bottom:1px solid #333}
-footer .logo{align-items:flex-start}
-footer .logo small{margin-left:60px}
-footer .tag{color:#999;font-size:13px;margin-top:24px}
-footer nav{display:grid;grid-template-columns:1fr 1fr;gap:20px;font-size:13px;color:#ccc}
-footer nav a:hover,.legal a:hover{color:#fff}
-footer .eyebrow{color:#a8916f}
-footer .phone{display:flex;gap:16px;align-items:center;margin-top:18px;font-size:32px}
-.legal{display:flex;justify-content:space-between;padding-top:32px;font-size:11px;color:#888}
-.legal div{display:flex;gap:28px}
-@media(max-width:900px){
- nav.top{display:none}.menu-btn{display:block}
- .intro .wrap{grid-template-columns:1fr;gap:32px}
- .cards{grid-template-columns:1fr 1fr;row-gap:40px}
- .card:nth-child(3){border-left:0;padding-left:0}
- footer .grid{grid-template-columns:1fr}
- .legal{flex-direction:column;gap:16px}
- .props-head,.approach-head{flex-direction:column;align-items:flex-start;gap:24px}
- .approach-head p{text-align:left}
-}
-</style>
+<link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-<header>
- <div class="wrap">
-  <a href="#" class="logo" aria-label="StoneBridge Development Group home"><b>STONEBRIDGE</b><small>DEVELOPMENT GROUP</small></a>
-  <nav class="top"><a href="#properties">Properties</a><a href="#approach">What We Do</a><a href="#introduction">About</a><a href="#sell">Sell Your Property</a><a href="tel:2488008100">Contact</a></nav>
-  <button class="menu-btn" aria-label="Open menu"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button>
- </div>
-</header>
 <main>
  <div class="hero">
   <img src="https://media.base44.com/images/public/6ac3fab3f8cee0aee2835970/22e654675_generated_d0e1d928.jpg" alt="Illustrative contemporary residential architecture at dusk">
@@ -104,8 +17,8 @@ footer .phone{display:flex;gap:16px;align-items:center;margin-top:18px;font-size
    <h1 class="serif">Real Estate.<br><em>Thoughtfully</em> Developed.</h1>
    <p class="lead">StoneBridge Development Group acquires, develops, renovates, and operates residential properties with a long-term approach to real estate.</p>
    <div class="btns">
-    <a class="btn solid" href="#properties">View Our Properties <span>→</span></a>
-    <a class="btn ghost" href="#sell">Sell Your Property <span>↗</span></a>
+    <a class="btn solid" href="/properties/">View Our Properties <span>→</span></a>
+    <a class="btn ghost" href="/sell-your-property/?review=1">Sell Your Property <span>↗</span></a>
    </div>
   </div>
   <a class="explore" href="#introduction"><div class="wrap">EXPLORE STONEBRIDGE &nbsp;&nbsp;&nbsp; ↓</div></a>
@@ -118,7 +31,7 @@ footer .phone{display:flex;gap:16px;align-items:center;margin-top:18px;font-size
    <div>
     <p>StoneBridge Development Group is a private real-estate development and investment company focused on acquiring residential properties, transforming them through thoughtful renovation and development, and building a portfolio of quality homes.</p>
     <p>From acquisition through renovation and long-term ownership, we take a hands-on approach to creating properties that are valuable to both the communities they serve and the people who live in them.</p>
-    <a class="link-line" href="#approach" style="margin-top:20px">Get to Know StoneBridge <span>↗</span></a>
+    <a class="link-line" href="/about/" style="margin-top:20px">Get to Know StoneBridge <span>↗</span></a>
    </div>
   </div>
  </section>
@@ -140,7 +53,7 @@ footer .phone{display:flex;gap:16px;align-items:center;margin-top:18px;font-size
   <div class="wrap">
    <div class="props-head">
     <div><p class="eyebrow">The StoneBridge Portfolio</p><h2 class="serif sec-h">Properties</h2></div>
-    <a class="link-line" href="#properties">Explore the Portfolio <span>↗</span></a>
+    <a class="link-line" href="/properties/">Explore the Portfolio <span>↗</span></a>
    </div>
    <p class="sub">Explore homes currently available through StoneBridge Development Group.</p>
    <div class="empty">
@@ -148,34 +61,13 @@ footer .phone{display:flex;gap:16px;align-items:center;margin-top:18px;font-size
     <p class="eyebrow" style="font-size:8px">Quality Homes. Long-Term Vision.</p>
     <h3 class="serif">Our Current Portfolio</h3>
     <p class="t">We don't currently have a property available for lease or purchase.<br>New opportunities are added as they become available.</p>
-    <a class="btn outline" href="tel:2488008100">Contact StoneBridge <span>↗</span></a>
+    <a class="btn outline" href="/contact/">Contact StoneBridge <span>↗</span></a>
    </div>
   </div>
  </section>
 
- <section class="sell" id="sell">
-  <div class="wrap">
-   <div>
-    <p class="eyebrow">Residential Acquisitions</p>
-    <h2 class="serif sec-h">Have a Property You’d<br>Consider Selling?</h2>
-    <p class="t">We're always evaluating residential acquisition opportunities. Tell us about your property and our team will review the opportunity.</p>
-   </div>
-   <div class="actions">
-    <a class="btn dark" href="mailto:?subject=Property%20Review">Tell Us About Your Property <span>↗</span></a>
-    <a class="phone" href="tel:2488008100">248-800-8100</a>
-   </div>
-  </div>
- </section>
+ <div data-sell-cta></div>
 </main>
-<footer>
- <div class="wrap">
-  <div class="grid">
-   <div><a href="#" class="logo"><b>STONEBRIDGE</b><small>DEVELOPMENT GROUP</small></a><p class="tag">Real Estate. Thoughtfully Developed.</p></div>
-   <nav aria-label="Footer navigation"><a href="#properties">Properties</a><a href="#approach">What We Do</a><a href="#introduction">About</a><a href="#sell">Sell Your Property</a><a href="tel:2488008100">Contact</a></nav>
-   <div><p class="eyebrow">Let's Talk Real Estate</p><a class="phone" href="tel:2488008100">248-800-8100 <span style="font-size:20px">↗</span></a></div>
-  </div>
-  <div class="legal"><p>© 2026 StoneBridge Development Group. All rights reserved.</p><div><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div></div>
- </div>
-</footer>
+<script src="/site.js"></script>
 </body>
 </html>
